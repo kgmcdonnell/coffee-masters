@@ -11,8 +11,66 @@
     <img src="https://btholt.github.io/complete-intro-to-web-dev-v3/images/coffee_masters_logo.png" alt="coffee masters logo"/>
     <h1>Coffee Masters</h1>
   </header>
-  <div class="order-items"></div>
-  <div class="checkout-details"></div>
-  <div class="total"></div>
+  <div class="order-items">
+    <h3 class="section-title items-header">Items</h3>
+    <div class="order-item order-item-1">
+      <p class="item-quanity">1x</p>
+      <p class="item-name">Cappaucino</p>
+      <p class="item-price">$6.00</p>
+      <ul class="item-options">
+        <li class="item-option">Light Foam</li>
+      </ul>
+    </div>
+    <div class="order-item order-item-1">
+      <p class="item-quanity">1x</p>
+      <p class="item-name">Cappaucino</p>
+      <p class="item-price">$7.90</p>
+      <ul class="item-options">
+        <li class="item-option">Almond Milk</li>
+        <li class="item-option">Double Espresso Shot</li>
+      </ul>
+    </div>
+    <div class="order-item order-item-1">
+      <p class="item-quanity">1x</p>
+      <p class="item-name">Croissant</p>
+      <p class="item-price">$5.37</p>
+      <ul class="item-options">
+        <li class="item-option">Butter</li>
+      </ul>
+    </div>
+  </div>
+  <div class="checkout-details">
+    <div class="name-section">
+      <h3 class="section-title name-header">Name</h3>
+      <label for="name-input" class="input-label">Name for order</label>
+      <input id="name-input" class="input" />
+    </div>
+    <div class="payment-section">
+      <h3 class="section-title payment-header">Payment</h3>
+      <div class="input-group">
+        <label for="payment-input" class="input-label">Name for order</label>
+        <input id="payment-input" class="input" />
+      </div>
+      <div class="input-group">
+        <label for="ccv-input" class="input-label">CCV number</label>
+        <input id="ccv-input" class="input" />
+      </div>
+    </div>
+  </div>
+  <div class="total-section">
+    <table class="total-table">
+      <tbody>
+        <tr>
+          <td>Subtotal:</td>
+          <td>$19.27</td>
+        </tr>
+        <tr>
+          <td>Tax:</td>
+          <td>$20.23</td>
+        </tr>  
+      </tbody>
+    </table>
+    <button type="button" class="checkout">Place order</button>
+  </div>
 </body>
 </html>

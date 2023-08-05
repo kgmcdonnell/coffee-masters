@@ -2,25 +2,21 @@
 .header{
   grid-area: header;
   background-color: rgb(246, 209, 215);
-  padding: 10px;
 }
 
 .order-items {
   grid-area: order-items;
   background-color: gray;
-  padding: 10px;
 }
 
 .checkout-details {
   grid-area: checkout-details;
   background-color: rgb(214, 214, 242);
-  padding: 10px;
 }
 
 .total {
   grid-area: total;
   background-color: rgb(248, 248, 200);
-  padding: 10px;
 }
 
 .page-layout {
