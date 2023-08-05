@@ -1,20 +1,24 @@
+* {
+  margin: 0;
+}
+
 /* setting up the page layout using grid */
 .header{
   grid-area: header;
-  background-color: rgb(246, 209, 215);
+  background-color: #43281c;
+  color: #fbf2c0;
+  margin: 0;
 }
 
 .order-items {
   grid-area: order-items;
-  background-color: gray;
 }
 
 .checkout-details {
   grid-area: checkout-details;
-  background-color: rgb(214, 214, 242);
 }
 
-.total {
+.total-section {
   grid-area: total;
   background-color: rgb(248, 248, 200);
 }
@@ -26,5 +30,68 @@
   "order-items  checkout-details"
   "total        total";
 }
+
+/* styling header */
+.header {
+  display:flex;
+  justify-content: center;
+  padding: 15px;
+  font-size: 15px;
+}
+
+.header img {
+  max-height: 30px;
+  padding-right: 15px;
+}
+
+.header h1{
+  margin: 0;
+}
+
+/* styling sections */
+.order-items, .checkout-details {
+  margin: 30px;
+}
+
+.section-box, .order-items {
+  background-color: #eee1d5;
+  padding: 40px;
+  border-radius: 5px;
+}
+
+/* checkout details layout using flex */
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-grow .name-section {
+  flex-grow: 1;
+  height:0;
+}
+
+.flex-grow .payment-section {
+  flex-grow: 2;
+  height: 0;
+}
+
+.payment-section {
+  margin-top: 20px;
+}
+
+.input {
+  border-radius: 50px;
+  background-color: rgba(0,0,0,0);
+  border: 2px #885a2d solid;
+  padding: 8px;
+  width: 70%;
+}
+
+/* total section styling */
+
+
+
+
+
 
 
