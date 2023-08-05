@@ -36,6 +36,10 @@
   border-bottom: 1px solid black;
 }
 
+.order-item:last-child {
+  border-bottom: none;
+}
+
 .item-quantity{
   grid-area: quantity;
 }
