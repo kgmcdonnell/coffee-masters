@@ -13,7 +13,7 @@
   </header>
   <div class="order-items">
     <h3 class="section-title items-header">ITEMS</h3>
-    <div class="order-item order-item-1">
+    <div class="order-item my-grid">
       <p class="item-quanity">1x</p>
       <p class="item-name">Cappaucino</p>
       <p class="item-price">$6.00</p>
@@ -21,7 +21,7 @@
         <li class="item-option">Light Foam</li>
       </ul>
     </div>
-    <div class="order-item order-item-1">
+    <div class="order-item my-grid">
       <p class="item-quanity">1x</p>
       <p class="item-name">Cappaucino</p>
       <p class="item-price">$7.90</p>
@@ -30,7 +30,7 @@
         <li class="item-option">Double Espresso Shot</li>
       </ul>
     </div>
-    <div class="order-item order-item-1">
+    <div class="order-item my-grid">
       <p class="item-quanity">1x</p>
       <p class="item-name">Croissant</p>
       <p class="item-price">$5.37</p>
@@ -42,18 +42,15 @@
   <div class="checkout-details flex-container flex-grow">
     <div class="name-section section-box">
       <h3 class="section-title name-header">NAME</h3>
-      <label for="name-input" class="input-label">Name for order</label>
-      <input id="name-input" class="input" />
+      <input id="name-input" class="input" placeholder="Name for order"/>
     </div>
     <div class="payment-section section-box">
       <h3 class="section-title payment-header">PAYMENT</h3>
-      <div class="input-group">
-        <label for="payment-input" class="input-label">Card number</label>
-        <input id="payment-input input" class="input" />
+      <div class="payment-input">
+        <input id="input" class="input" placeholder="Card number"/>
       </div>
-      <div class="input-group">
-        <label for="ccv-input" class="input-label">CCV number</label>
-        <input id="ccv-input input short-input" class="input" />
+      <div class="payment-input">
+        <input id="input short-input" class="input" placeholder="CCV number"/>
       </div>
     </div>
   </div>

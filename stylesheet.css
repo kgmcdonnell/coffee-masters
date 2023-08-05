@@ -29,6 +29,36 @@
   "order-items  checkout-details"
   "total        total";
 }
+/* setting up grid for order items */
+
+.order-item {
+  margin-bottom: 30px;
+  border-bottom: 1px solid black;
+}
+
+.item-quantity{
+  grid-area: quantity;
+}
+.item-name{
+  grid-area: name;
+}
+.item-price{
+  grid-area: price;
+}
+.item-options {
+  grid-area: options;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #B08968;
+}
+
+.my-grid {
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
+  grid-template-areas:
+    "quantity name price"
+    "quantity options price"
+}
 
 /* styling header */
 .header {
@@ -52,10 +82,23 @@
   margin: 30px;
 }
 
+.section-title{
+  font-size: 15px;
+  font-weight: lighter;
+  color: #B08968;
+  margin-bottom: 10px;
+}
+
 .section-box, .order-items {
   background-color: #eee1d5;
   padding: 40px;
   border-radius: 5px;
+}
+
+/* items styling */
+.item-options {
+  list-style-type: none;
+  padding: 0px;
 }
 
 /* checkout details layout using flex */
@@ -84,6 +127,11 @@
   border: 2px #885a2d solid;
   padding: 8px;
   width: 70%;
+
+}
+
+.payment-input {
+  margin-bottom: 30px;
 }
 
 /* total section styling */
@@ -103,8 +151,9 @@
   background-color: #eee1d5;
   border-radius: 50px;
   border: 2px;
-  margin: 40px;
+  margin: 30px;
   padding: 10px;
+  font-size: 15px;
 }
 
 .left-td {
